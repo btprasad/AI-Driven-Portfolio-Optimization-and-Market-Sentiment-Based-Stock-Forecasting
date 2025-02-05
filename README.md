@@ -33,7 +33,7 @@ This project leverages **Artificial Intelligence (AI), Machine Learning (ML), an
 ## **🔧 Installation & Setup**
 ### **🔹 Clone the Repository**
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/btprasad/AI-Driven-Portfolio-Optimization-and-Market-Sentiment-Based-Stock-Forecasting)
 cd your-repo-name
 ```
 
@@ -49,42 +49,53 @@ pip install pandas numpy tensorflow scikit-learn yfinance pyodbc requests textbl
 
 ---
 
-## **📌 Running the Project**
-### **1️⃣ Fetch Financial Data**
-```bash
-python etl_pipeline.py
-```
-
-### **2️⃣ Run AI Model for Stock Forecasting**
-```bash
-python lstm_stock_forecasting.py
-```
-
-### **3️⃣ Perform Sentiment Analysis on Financial News**
-```bash
-python sentiment_analysis.py
-```
-
-### **4️⃣ Open Power BI to Visualize Market Trends**
-- Connect to `FinalStockAnalysis` table in **SQL Server**
-- Create interactive **dashboards** for stock price analysis.
-
----
 
 ## **📌 Project Structure**
 ```plaintext
 📂 AI-Stock-Prediction
 │── 📂 data/                     # Raw & Processed Data
-│── 📂 sql/                      # SQL Queries for Data Processing
+│   ├── enhanced_stock_data.xlsx        # Preprocessed Stock Data
+│   ├── financial_data.xlsx             # Stock Market Data from SQL
+│   ├── finnhub_financial_ratios.xlsx   # Financial Ratios from Finnhub API
+│   ├── fred_economic_data.xlsx         # Inflation & Interest Rate Data
+│   ├── future_predictions.xlsx         # AI Model Stock Forecasting
+│   ├── lstm_predictions.xlsx           # LSTM Stock Price Predictions
+│   ├── news_sentiment.xlsx             # Sentiment Scores on Financial News
+│   ├── news_sentiment_with_date.xlsx   # News Sentiment Mapped with Date
+│   ├── stock_with_sentiment.xlsx       # Merged Stock & Sentiment Data
+│   ├── stock_with_sentiment_fixed.xlsx # Final Cleaned Dataset for AI Model
+│   ├── yahoo_stock_data.xlsx           # Raw Stock Data from Yahoo Finance
+│
+│── 📂 sql/                      # SQL Queries & Database Schema
+│   ├── Project data.sql                # SQL Queries for Table Creation & Data Import
+│   ├── financial_market_schema.sql     # SQL Server Schema
+│
 │── 📂 notebooks/                # Jupyter Notebooks for Model Training
+│   ├── AI_Driven_Portfolio_Optimization.ipynb   # Main AI Notebook
+│
+│── 📂 etl/                      # ETL Scripts for Data Processing
+│   ├── Package.dtsx                    # SSIS Package for ETL Process
+│   ├── etl_pipeline.py                  # Python-based ETL Script
+│
 │── 📂 models/                   # Trained AI/ML Models
+│   ├── lstm_stock_model.h5             # Trained LSTM Model
+│   ├── sentiment_analysis_model.pkl    # Sentiment Analysis Model
+│
 │── 📂 reports/                  # Power BI & SSRS Reports
-│── etl_pipeline.py              # Data Extraction & Processing
+│   ├── PowerBI_Dashboard.pbix          # Power BI Dashboard File
+│   ├── SSRS_Report.rdl                  # SQL Server Reporting Services Report
+│
+│── 📂 automation/               # Scripts for Scheduled Updates
+│   ├── schedule_etl.sql                # SQL Server Agent Job Script
+│   ├── schedule_ai_model.py            # Python Script for Auto AI Training
+│
+│── etl_pipeline.py              # Data Extraction & Processing Script
 │── lstm_stock_forecasting.py     # AI Model for Stock Forecasting
 │── sentiment_analysis.py         # Sentiment Analysis on Financial News
 │── requirements.txt              # Python Dependencies
 │── README.md                     # Project Documentation
-│── LICENSE                       # License Info
+│── LICENSE                       # License Information
+
 ```
 
 ---
