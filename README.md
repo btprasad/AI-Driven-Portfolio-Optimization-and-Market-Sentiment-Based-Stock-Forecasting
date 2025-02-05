@@ -199,30 +199,12 @@ print("✅ Sentiment Analysis Complete!")
 3. **Commit changes**
 4. **Push to GitHub & submit a PR**
 
----
-
-## **📌 License**
-This project is licensed under the **MIT License**.
 
 ---
 
 ## **📌 Contact & Support**
-📧 Email: your-email@example.com  
-🌍 LinkedIn: [Your Name](https://www.linkedin.com/in/yourname/)  
-🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)  
+📧 Email: tirumalaprasad10@gmail.com 
 
 ---
 
-### **🚀 Ready to Predict the Stock Market with AI?**
-Give this repository a ⭐ on GitHub and contribute to financial AI innovations!  
-```
 
----
-
-## **📌 Next Steps**
-Would you like me to:
-1️⃣ **Help you structure your GitHub repository (folders, README updates, etc.)?**  
-2️⃣ **Create a `requirements.txt` file with dependencies?**  
-3️⃣ **Guide you on deploying your AI model as a web app using Flask?**  
-
-Let me know, and I’ll assist you with the next steps! 🚀
